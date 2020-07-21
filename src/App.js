@@ -94,18 +94,14 @@ function App(props) {
 				mapContainerStyle={mapContainerStyle}
 				zoom={17}
 				center={{
-					// lat: props?.coords?.latitude || 59.334394,
-					// lng: props?.coords?.longitude || 24.693515,
-					lat: 59.335235,
-					lng: 24.696992,
+					lat: props?.coords?.latitude || 59.334322,
+					lng: props?.coords?.longitude || 24.693453,
 				}}
 				options={options}>
 				<Marker
 					position={{
-						// lat: props?.coords?.latitude || 59.334394,
-						// lng: props?.coords?.longitude || 24.693515,
-						lat: 59.335335,
-						lng: 24.696892,
+						lat: props?.coords?.latitude || 59.334322,
+						lng: props?.coords?.longitude || 24.693453,
 					}}
 					options={{
 						icon: {
@@ -210,5 +206,5 @@ export default geolocated({
 		timeout: Infinity,
 	},
 	watchPosition: true,
-	userDecisionTimeout: 10000,
+	userDecisionTimeout: 5000,
 })(App);
