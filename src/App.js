@@ -96,10 +96,28 @@ function App(props) {
 				center={{
 					// lat: props?.coords?.latitude || 59.334394,
 					// lng: props?.coords?.longitude || 24.693515,
-					lat: 59.335221,
-					lng: 24.696972,
+					lat: 59.335235,
+					lng: 24.696992,
 				}}
 				options={options}>
+				<Marker
+					position={{
+						// lat: props?.coords?.latitude || 59.334394,
+						// lng: props?.coords?.longitude || 24.693515,
+						lat: 59.335335,
+						lng: 24.696892,
+					}}
+					options={{
+						icon: {
+							url: require('./sai.svg'),
+							scaledSize: {
+								width: 40,
+								height: 40,
+							},
+						},
+					}}
+				/>
+
 				<Marker position={ll1} onClick={() => setImg1(true)} />
 				<Marker position={ll2} onClick={() => setImg2(true)} />
 				<Marker position={ll3} onClick={() => setImg3(true)} />
@@ -192,5 +210,5 @@ export default geolocated({
 		timeout: Infinity,
 	},
 	watchPosition: true,
-	userDecisionTimeout: 5000,
+	userDecisionTimeout: 10000,
 })(App);
