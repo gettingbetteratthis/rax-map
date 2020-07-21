@@ -1,0 +1,41 @@
+html,
+body {
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+}
+#root {
+	height: 100%;
+	width: 100%;
+}
+.App {
+	height: 100%;
+	width: 100%;
+}
+.img-container {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+.img-container img {
+	width: 100%;
+}
+.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: block;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	border: 1px solid #000;
+	border-radius: 5px;
+	color: #000;
+}
