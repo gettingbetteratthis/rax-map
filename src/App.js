@@ -22,42 +22,42 @@ const options = {
 };
 
 const ll1 = {
-	lat: 59.335221,
-	lng: 24.696972,
+	lat: 59.3350903,
+	lng: 24.6970970,
 };
 const ll2 = {
-	lat: 59.334936,
-	lng: 24.696339,
+	lat: 59.3344654,
+	lng: 24.6964191,
 };
 
 const ll3 = {
-	lat: 59.332802,
-	lng: 24.694472,
+	lat: 59.3324421,
+	lng: 24.694969,
 };
 
 const ll4 = {
-	lat: 59.332693,
-	lng: 24.69268,
+	lat: 59.332475,
+	lng: 24.692928,
 };
 
 const ll5 = {
-	lat: 59.33359,
-	lng: 24.69106,
+	lat: 59.333830,
+	lng: 24.690952,
 };
 
 const ll6 = {
-	lat: 59.335467,
-	lng: 24.690824,
+	lat: 59.3350894,
+	lng: 24.6896710,
 };
 
 const ll7 = {
-	lat: 59.336167,
-	lng: 24.691468,
+	lat: 59.3359039,
+	lng: 24.6900468,
 };
 
 const ll8 = {
-	lat: 59.33574,
-	lng: 24.692552,
+	lat: 59.3361890,
+	lng: 24.6917731,
 };
 
 function App(props) {
@@ -94,14 +94,14 @@ function App(props) {
 				mapContainerStyle={mapContainerStyle}
 				zoom={17}
 				center={{
-					lat: props?.coords?.latitude || 59.334322,
-					lng: props?.coords?.longitude || 24.693453,
+					lat: props?.coords?.latitude || 59.3350903,
+					lng: props?.coords?.longitude || 24.6970970,
 				}}
 				options={options}>
 				<Marker
 					position={{
-						lat: props?.coords?.latitude || 59.334322,
-						lng: props?.coords?.longitude || 24.693453,
+						lat: props?.coords?.latitude || 59.3350903,
+						lng: props?.coords?.longitude || 24.6970970,
 					}}
 					options={{
 						icon: {
